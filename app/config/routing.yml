@@ -1,0 +1,4 @@
+tf_main:
+    resource: "@TFMainBundle/Resources/config/routing.yml"
+    prefix:   /main
+

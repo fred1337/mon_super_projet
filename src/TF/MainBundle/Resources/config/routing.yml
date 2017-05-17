@@ -1,0 +1,4 @@
+main_default_home:
+    path: /home/{id}
+    defaults:
+        _controller: TFMainBundle:Default:Home

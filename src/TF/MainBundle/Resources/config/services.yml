@@ -1,0 +1,4 @@
+services:
+#    tf_main.example:
+#        class: TF\MainBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
