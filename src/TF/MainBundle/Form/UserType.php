@@ -20,7 +20,9 @@ class UserType extends AbstractType
             ->add('fisrtName')
             ->add('password', PasswordType::class)
             ->add('email', EmailType::class)
+            ->add('Avatar', PictureType::class)
             ->add('submit', SubmitType::class);
+
         //->add('Avatar');
     }
     

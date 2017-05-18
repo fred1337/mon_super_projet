@@ -237,7 +237,15 @@ class User
      */
     public function setAvatar($Avatar)
     {
+
         $this->Avatar = $Avatar;
+        $this->Avatar->setAlt($this->getLastName());
+    }
+
+    public function __construct()
+    {
+        $this->salt = uniqid();
+        $this->Roles = ["ROLE_USER"];
     }
 }
 

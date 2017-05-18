@@ -15,6 +15,8 @@ class UserController extends Controller
         $form = $this->createForm(UserType::class, $user);
         $form->handleRequest($request);
         if ($form->isValid()) {
+            //dump($user);die;
+            $user->getAvatar()->upload();
             dump($user);die;
             $em = $this->getDoctrine()->getManager();
             $em->persist($user);

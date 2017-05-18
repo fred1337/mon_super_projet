@@ -1,21 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2bef723d-1eb3-4b75-9bc7-38bfd1dc0286" name="Default" comment="form html">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_15_05_17_11_12_s.xml" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_18_05_17_10_03_s.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
+    <list default="true" id="2bef723d-1eb3-4b75-9bc7-38bfd1dc0286" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TF/MainBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/TF/MainBundle/Controller/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TF/MainBundle/Entity/Booking.php" afterPath="$PROJECT_DIR$/src/TF/MainBundle/Entity/Booking.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TF/MainBundle/Entity/Hotel.php" afterPath="$PROJECT_DIR$/src/TF/MainBundle/Entity/Hotel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TF/MainBundle/Controller/UserController.php" afterPath="$PROJECT_DIR$/src/TF/MainBundle/Controller/UserController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TF/MainBundle/Entity/Picture.php" afterPath="$PROJECT_DIR$/src/TF/MainBundle/Entity/Picture.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TF/MainBundle/Entity/User.php" afterPath="$PROJECT_DIR$/src/TF/MainBundle/Entity/User.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TF/MainBundle/Form/UserType.php" afterPath="$PROJECT_DIR$/src/TF/MainBundle/Form/UserType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TF/MainBundle/Resources/views/User/register.html.twig" afterPath="$PROJECT_DIR$/src/TF/MainBundle/Resources/views/User/register.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -150,8 +141,18 @@
       <file leaf-file-name="UserType.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TF/MainBundle/Form/UserType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="22" column="31" lean-forward="true" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+            <state relative-caret-position="239">
+              <caret line="21" column="44" lean-forward="false" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PictureType.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TF/MainBundle/Form/PictureType.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="16" column="47" lean-forward="false" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -180,11 +181,11 @@
       <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TF/MainBundle/Controller/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            <state relative-caret-position="408">
+              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding>
                 <element signature="e#44#101#0#PHP" expanded="true" />
-                <element signature="e#345#383#0#PHP" expanded="true" />
+                <element signature="e#728#766#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -195,28 +196,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
               <caret line="5" column="10" lean-forward="false" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-              <folding>
-                <element signature="e#12#28#0#Twig" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Booking.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TF/MainBundle/Entity/Booking.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="62" lean-forward="false" selection-start-line="16" selection-start-column="62" selection-end-line="16" selection-end-column="62" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Hotel.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Hotel.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TF/MainBundle/Entity/Hotel.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="48" column="7" lean-forward="true" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
+              <caret line="48" column="7" lean-forward="false" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -225,19 +214,21 @@
       <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TF/MainBundle/Entity/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="38" column="6" lean-forward="false" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
+            <state relative-caret-position="137">
+              <caret line="218" column="6" lean-forward="false" selection-start-line="218" selection-start-column="6" selection-end-line="218" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="autoload.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/autoload.php">
+      <file leaf-file-name="Picture.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/TF/MainBundle/Entity/Picture.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="-1569">
+              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding>
+                <element signature="e#40#72#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -270,6 +261,8 @@
       <command text="s doctrine:schema:update --force" />
       <command text="s doctrine:fixtures:load" />
       <command text="s doctrine:generate:form TFMainBundle:User" />
+      <command text="s doctrine:generate:form TFMainBundle:Picture" />
+      <command text="git push" />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
@@ -297,18 +290,19 @@
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
         <option value="$PROJECT_DIR$/src/TF/MainBundle/DataFixtures/ORM/LoadCountry.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a3f528b4-91a8-4353-a9be-0a4b3dc1d664/console.sql" />
-        <option value="$PROJECT_DIR$/src/TF/MainBundle/Entity/Picture.php" />
         <option value="$PROJECT_DIR$/src/TF/MainBundle/Resources/views/Default/Contact.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/nav/nav.html.twig" />
         <option value="$PROJECT_DIR$/src/TF/MainBundle/Entity/Booking.php" />
-        <option value="$PROJECT_DIR$/src/TF/MainBundle/Entity/User.php" />
         <option value="$PROJECT_DIR$/src/TF/MainBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/TF/MainBundle/Entity/Hotel.php" />
         <option value="$PROJECT_DIR$/src/TF/MainBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/TF/MainBundle/Controller/UserController.php" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
-        <option value="$PROJECT_DIR$/src/TF/MainBundle/Form/UserType.php" />
         <option value="$PROJECT_DIR$/src/TF/MainBundle/Resources/views/User/register.html.twig" />
+        <option value="$PROJECT_DIR$/src/TF/MainBundle/Form/UserType.php" />
+        <option value="$PROJECT_DIR$/src/TF/MainBundle/Form/PictureType.php" />
+        <option value="$PROJECT_DIR$/src/TF/MainBundle/Entity/User.php" />
+        <option value="$PROJECT_DIR$/src/TF/MainBundle/Controller/UserController.php" />
+        <option value="$PROJECT_DIR$/src/TF/MainBundle/Entity/Picture.php" />
       </list>
     </option>
   </component>
@@ -778,7 +772,7 @@
       <workItem from="1495007578639" duration="13691000" />
       <workItem from="1495094482243" duration="1080000" />
       <workItem from="1495095613204" duration="5443000" />
-      <workItem from="1495102992249" duration="4726000" />
+      <workItem from="1495102992249" duration="9761000" />
     </task>
     <task id="LOCAL-00001" summary="form html">
       <created>1495109695505</created>
@@ -794,11 +788,39 @@
       <option name="project" value="LOCAL" />
       <updated>1495109797391</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="affichage du formulaire">
+      <created>1495111108697</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1495111108697</updated>
+    </task>
+    <task id="LOCAL-00004" summary="affichage du formulaire">
+      <created>1495111510620</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1495111510620</updated>
+    </task>
+    <task id="LOCAL-00005" summary="retourne le contenu du formulaire">
+      <created>1495111835285</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1495111835285</updated>
+    </task>
+    <task id="LOCAL-00006" summary="chargement image dans le formulaire">
+      <created>1495116513741</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1495116513741</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41564000" />
+    <option name="totallyTimeSpent" value="46599000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -841,21 +863,16 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="form html" />
-    <option name="LAST_COMMIT_MESSAGE" value="form html" />
+    <MESSAGE value="affichage du formulaire" />
+    <MESSAGE value="retourne le contenu du formulaire" />
+    <MESSAGE value="chargement image dans le formulaire" />
+    <option name="LAST_COMMIT_MESSAGE" value="chargement image dans le formulaire" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/TF/MainBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/TF/MainBundle/Entity/Country.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
@@ -1042,6 +1059,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="5" lean-forward="false" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1068,14 +1086,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TF/MainBundle/Entity/test.php" />
-    <entry file="file://$PROJECT_DIR$/src/TF/MainBundle/Entity/Picture.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-782">
-          <caret line="17" column="86" lean-forward="false" selection-start-line="17" selection-start-column="86" selection-end-line="17" selection-end-column="86" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/TF/MainBundle/Repository/HotelRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1165,25 +1175,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TF/MainBundle/Entity/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="38" column="6" lean-forward="false" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TF/MainBundle/Controller/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <element signature="e#44#101#0#PHP" expanded="true" />
-            <element signature="e#345#383#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/TF/MainBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -1204,16 +1195,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="10" lean-forward="false" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-          <folding>
-            <element signature="e#12#28#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TF/MainBundle/Form/UserType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="22" column="31" lean-forward="true" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -1221,8 +1202,53 @@
     <entry file="file://$PROJECT_DIR$/src/TF/MainBundle/Entity/Hotel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="48" column="7" lean-forward="true" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
+          <caret line="48" column="7" lean-forward="false" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TF/MainBundle/Form/PictureType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="16" column="47" lean-forward="false" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TF/MainBundle/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="218" column="6" lean-forward="false" selection-start-line="218" selection-start-column="6" selection-end-line="218" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TF/MainBundle/Form/UserType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="21" column="44" lean-forward="false" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TF/MainBundle/Controller/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="e#44#101#0#PHP" expanded="true" />
+            <element signature="e#728#766#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TF/MainBundle/Entity/Picture.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1569">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#40#72#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

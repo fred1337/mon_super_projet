@@ -3,6 +3,7 @@
 namespace TF\MainBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 /**
  * Picture
@@ -12,7 +13,7 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Picture
 {
-
+    private $file;
     /**
      * @var Hotel
      * @ORM\ManyToOne(targetEntity="TF\MainBundle\Entity\Hotel", inversedBy="Pictures")
@@ -100,6 +101,29 @@ class Picture
     public function getAlt()
     {
         return $this->alt;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getFile()
+    {
+        return $this->file;
+    }
+
+    /**
+     * @param mixed $file
+     */
+    public function setFile(UploadedFile $file)
+    {
+        $this->file = $file;
+    }
+
+    public function upload()
+    {
+        $name = uniqid();
+        move_uploaded_file($this->file, __DIR__."/../../../../web/img/".$name);
+        $this->url = "img/".$name;
     }
 }
 
