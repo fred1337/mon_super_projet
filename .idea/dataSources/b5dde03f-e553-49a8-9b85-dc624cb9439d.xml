@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="maSuperDataBase@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.2">
+    <root id="1"/>
+    <schema id="2" parent="1" name="masuperdatabase">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="drupal"/>
+    <schema id="4" parent="1" name="information_schema"/>
+    <schema id="5" parent="1" name="mysql"/>
+    <schema id="6" parent="1" name="performance_schema"/>
+    <schema id="7" parent="1" name="phpmyadmin"/>
+    <schema id="8" parent="1" name="test"/>
+    <table id="9" parent="2" name="booking"/>
+    <table id="10" parent="2" name="country"/>
+    <table id="11" parent="2" name="hotel"/>
+    <table id="12" parent="2" name="options"/>
+    <table id="13" parent="2" name="picture"/>
+    <table id="14" parent="2" name="user"/>
+    <column id="15" parent="9" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="16" parent="9" name="StartDate">
+      <Position>2</Position>
+      <DataType>datetime|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="17" parent="9" name="EndDate">
+      <Position>3</Position>
+      <DataType>datetime|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="18" parent="9" name="user_id">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="19" parent="9" name="hotel_id">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="20" parent="9" name="UNIQ_E00CEDDE3243BB18">
+      <ColNames>hotel_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="21" parent="9" name="UNIQ_E00CEDDEA76ED395">
+      <ColNames>user_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="22" parent="9" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="23" parent="9" name="UNIQ_E00CEDDEA76ED395">
+      <ColNames>user_id</ColNames>
+      <UnderlyingIndexName>UNIQ_E00CEDDEA76ED395</UnderlyingIndexName>
+    </key>
+    <key id="24" parent="9" name="UNIQ_E00CEDDE3243BB18">
+      <ColNames>hotel_id</ColNames>
+      <UnderlyingIndexName>UNIQ_E00CEDDE3243BB18</UnderlyingIndexName>
+    </key>
+    <foreign-key id="25" parent="9" name="FK_E00CEDDEA76ED395">
+      <ColNames>user_id</ColNames>
+      <RefSchemaName>masuperdatabase</RefSchemaName>
+      <RefTableName>user</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="26" parent="9" name="FK_E00CEDDE3243BB18">
+      <ColNames>hotel_id</ColNames>
+      <RefSchemaName>masuperdatabase</RefSchemaName>
+      <RefTableName>hotel</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="27" parent="10" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="28" parent="10" name="ISO">
+      <Position>2</Position>
+      <DataType>varchar(4)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="29" parent="10" name="Name">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="30" parent="10" name="UNIQ_5373C966F7FF3DCB">
+      <ColNames>ISO</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="31" parent="10" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="32" parent="10" name="UNIQ_5373C966F7FF3DCB">
+      <ColNames>ISO</ColNames>
+      <UnderlyingIndexName>UNIQ_5373C966F7FF3DCB</UnderlyingIndexName>
+    </key>
+    <column id="33" parent="11" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="34" parent="11" name="main_picture_id">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="35" parent="11" name="Name">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="36" parent="11" name="City">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="37" parent="11" name="Price">
+      <Position>5</Position>
+      <DataType>double|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="38" parent="11" name="options_id">
+      <Position>6</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="39" parent="11" name="UNIQ_3535ED9D6BDC9DC">
+      <ColNames>main_picture_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="40" parent="11" name="UNIQ_3535ED93ADB05F1">
+      <ColNames>options_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="41" parent="11" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="42" parent="11" name="UNIQ_3535ED9D6BDC9DC">
+      <ColNames>main_picture_id</ColNames>
+      <UnderlyingIndexName>UNIQ_3535ED9D6BDC9DC</UnderlyingIndexName>
+    </key>
+    <key id="43" parent="11" name="UNIQ_3535ED93ADB05F1">
+      <ColNames>options_id</ColNames>
+      <UnderlyingIndexName>UNIQ_3535ED93ADB05F1</UnderlyingIndexName>
+    </key>
+    <foreign-key id="44" parent="11" name="FK_3535ED9D6BDC9DC">
+      <ColNames>main_picture_id</ColNames>
+      <RefSchemaName>masuperdatabase</RefSchemaName>
+      <RefTableName>picture</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="45" parent="11" name="FK_3535ED93ADB05F1">
+      <ColNames>options_id</ColNames>
+      <RefSchemaName>masuperdatabase</RefSchemaName>
+      <RefTableName>options</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="46" parent="12" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="47" parent="12" name="Pool">
+      <Position>2</Position>
+      <DataType>tinyint(1)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="48" parent="12" name="Internet">
+      <Position>3</Position>
+      <DataType>tinyint(1)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="49" parent="12" name="Breakfast">
+      <Position>4</Position>
+      <DataType>tinyint(1)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="50" parent="12" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="51" parent="13" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="52" parent="13" name="hotel_id">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="53" parent="13" name="Url">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="54" parent="13" name="Alt">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="55" parent="13" name="IDX_16DB4F893243BB18">
+      <ColNames>hotel_id</ColNames>
+    </index>
+    <key id="56" parent="13" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="57" parent="13" name="FK_16DB4F893243BB18">
+      <ColNames>hotel_id</ColNames>
+      <RefSchemaName>masuperdatabase</RefSchemaName>
+      <RefTableName>hotel</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="58" parent="14" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="59" parent="14" name="avatar_id">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="60" parent="14" name="LastName">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="61" parent="14" name="FisrtName">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="62" parent="14" name="Password">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="63" parent="14" name="Roles">
+      <Position>6</Position>
+      <Comment>(DC2Type:array)</Comment>
+      <DataType>longtext|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="64" parent="14" name="Email">
+      <Position>7</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="65" parent="14" name="Salt">
+      <Position>8</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="66" parent="14" name="UNIQ_8D93D64926535370">
+      <ColNames>Email</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="67" parent="14" name="UNIQ_8D93D6492FC94FC9">
+      <ColNames>Salt</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="68" parent="14" name="UNIQ_8D93D64986383B10">
+      <ColNames>avatar_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="69" parent="14" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="70" parent="14" name="UNIQ_8D93D64986383B10">
+      <ColNames>avatar_id</ColNames>
+      <UnderlyingIndexName>UNIQ_8D93D64986383B10</UnderlyingIndexName>
+    </key>
+    <key id="71" parent="14" name="UNIQ_8D93D64926535370">
+      <ColNames>Email</ColNames>
+      <UnderlyingIndexName>UNIQ_8D93D64926535370</UnderlyingIndexName>
+    </key>
+    <key id="72" parent="14" name="UNIQ_8D93D6492FC94FC9">
+      <ColNames>Salt</ColNames>
+      <UnderlyingIndexName>UNIQ_8D93D6492FC94FC9</UnderlyingIndexName>
+    </key>
+    <foreign-key id="73" parent="14" name="FK_8D93D64986383B10">
+      <ColNames>avatar_id</ColNames>
+      <RefSchemaName>masuperdatabase</RefSchemaName>
+      <RefTableName>picture</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+  </database-model>
+</dataSource>
