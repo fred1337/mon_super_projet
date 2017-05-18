@@ -13,6 +13,18 @@ use Doctrine\ORM\Mapping as ORM;
 class Booking
 {
     /**
+     * @var User
+     * @ORM\OneToOne(targetEntity="TF\MainBundle\Entity\User")
+     */
+    private $user;
+
+    /**
+     * @var Hotel
+     * @ORM\OneToOne(targetEntity="TF\MainBundle\Entity\Hotel")
+     */
+    private $hotel;
+
+    /**
      * @var int
      *
      * @ORM\Column(name="id", type="integer")
@@ -92,6 +104,38 @@ class Booking
     public function getEndDate()
     {
         return $this->endDate;
+    }
+
+    /**
+     * @return User
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
+
+    /**
+     * @param User $user
+     */
+    public function setUser($user)
+    {
+        $this->user = $user;
+    }
+
+    /**
+     * @return Hotel
+     */
+    public function getHotel()
+    {
+        return $this->hotel;
+    }
+
+    /**
+     * @param Hotel $hotel
+     */
+    public function setHotel($hotel)
+    {
+        $this->hotel = $hotel;
     }
 }
 

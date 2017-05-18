@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="monSuperServeur">
+  <component name="PublishConfigData" serverName="Mon super projet">
     <serverData>
-      <paths name="monSuperServeur">
+      <paths name="Mon super projet">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="mon_super_projet" />

@@ -13,6 +13,12 @@ use Doctrine\ORM\Mapping as ORM;
 class User
 {
     /**
+     * @var Picture
+     * @ORM\OneToOne(targetEntity="TF\MainBundle\Entity\Picture", cascade={"persist", "remove"})
+     */
+    private $Avatar;
+
+    /**
      * @var int
      *
      * @ORM\Column(name="id", type="integer")
@@ -216,6 +222,22 @@ class User
     public function getSalt()
     {
         return $this->salt;
+    }
+
+    /**
+     * @return Picture
+     */
+    public function getAvatar()
+    {
+        return $this->Avatar;
+    }
+
+    /**
+     * @param Picture $Avatar
+     */
+    public function setAvatar($Avatar)
+    {
+        $this->Avatar = $Avatar;
     }
 }
 

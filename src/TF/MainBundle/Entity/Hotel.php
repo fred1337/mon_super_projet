@@ -13,6 +13,24 @@ use Doctrine\ORM\Mapping as ORM;
 class Hotel
 {
     /**
+     * @var Options
+     * @ORM\OneToOne(targetEntity="TF\MainBundle\Entity\Options", cascade={"persist", "remove"})
+     */
+    private $Options;
+
+    /**
+     * @var Picture
+     * @ORM\OneToOne(targetEntity="TF\MainBundle\Entity\Picture")
+     */
+    private $MainPicture;
+
+    /**
+     * @var array
+     * @ORM\OneToMany(targetEntity="TF\MainBundle\Entity\Picture", mappedBy="hotel")
+     */
+    private $Pictures;
+
+    /**
      * @var int
      *
      * @ORM\Column(name="id", type="integer")
@@ -123,6 +141,62 @@ class Hotel
     public function getPrice()
     {
         return $this->price;
+    }
+
+    /**
+     * @return Picture
+     */
+    public function getMainPicture()
+    {
+        return $this->MainPicture;
+    }
+
+    /**
+     * @param Picture $MainPicture
+     */
+    public function setMainPicture($MainPicture)
+    {
+        $this->MainPicture = $MainPicture;
+    }
+
+    /**
+     * @return array
+     */
+    public function getPictures()
+    {
+        return $this->Pictures;
+    }
+
+    /**
+     * @param Picture
+     */
+    public function addPicture(Picture $Picture)
+    {
+        $this->Pictures[] = $Picture;
+    }
+    public function removePicture(Picture $picture)
+    {
+        //TO DO
+    }
+    public function __construct()
+    {
+        $this->Pictures = array();
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getOptions()
+    {
+        return $this->Options;
+    }
+
+    /**
+     * @param mixed $Options
+     */
+    public function setOptions($Options)
+    {
+        $this->Options = $Options;
     }
 }
 
