@@ -3,6 +3,7 @@
 namespace TF\MainBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Hotel
@@ -14,7 +15,7 @@ class Hotel
 {
     /**
      * @var Country
-     * @ORM\ManyToOne(targetEntity="TF\MainBundle\Entity\Country", cascade={"persist"})
+     * @ORM\ManyToOne(targetEntity="TF\MainBundle\Entity\Country")
      */
     private $Country;
     /**
@@ -25,7 +26,7 @@ class Hotel
 
     /**
      * @var Picture
-     * @ORM\OneToOne(targetEntity="TF\MainBundle\Entity\Picture")
+     * @ORM\OneToOne(targetEntity="TF\MainBundle\Entity\Picture", cascade={"persist"})
      */
     private $MainPicture;
 
@@ -48,6 +49,8 @@ class Hotel
      * @var string
      *
      * @ORM\Column(name="Name", type="string", length=255)
+     * @Assert\NotBlank(Message="pas touche petit con")
+     * @assert\Length(max="25",  maxMessage="Le champ doit être inf à 25", min=2)
      */
     private $name;
 
@@ -178,6 +181,7 @@ class Hotel
     public function addPicture(Picture $Picture)
     {
         $this->Pictures[] = $Picture;
+        $Picture->sethotel($this);
     }
     public function removePicture(Picture $picture)
     {

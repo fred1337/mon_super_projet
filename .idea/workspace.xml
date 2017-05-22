@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2bef723d-1eb3-4b75-9bc7-38bfd1dc0286" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/b5dde03f-e553-49a8-9b85-dc624cb9439d.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/b5dde03f-e553-49a8-9b85-dc624cb9439d.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TF/MainBundle/Controller/HotelController.php" afterPath="$PROJECT_DIR$/src/TF/MainBundle/Controller/HotelController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TF/MainBundle/Entity/Hotel.php" afterPath="$PROJECT_DIR$/src/TF/MainBundle/Entity/Hotel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TF/MainBundle/Entity/Picture.php" afterPath="$PROJECT_DIR$/src/TF/MainBundle/Entity/Picture.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TF/MainBundle/Form/HotelType.php" afterPath="$PROJECT_DIR$/src/TF/MainBundle/Form/HotelType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TF/MainBundle/Resources/views/Hotel/add.html.twig" afterPath="$PROJECT_DIR$/src/TF/MainBundle/Resources/views/Hotel/add.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -58,7 +55,7 @@
       <file leaf-file-name="HotelType.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TF/MainBundle/Form/HotelType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
+            <state relative-caret-position="595">
               <caret line="38" column="14" lean-forward="false" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
               <folding>
                 <element signature="e#38#87#0#PHP" expanded="true" />
@@ -123,9 +120,11 @@
       <file leaf-file-name="Hotel.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/TF/MainBundle/Entity/Hotel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="32" column="17" lean-forward="true" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
-              <folding />
+            <state relative-caret-position="17">
+              <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+              <folding>
+                <element signature="e#40#72#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -217,6 +216,7 @@
       <command text="git push" />
       <command text="s doctrine:generate:form TFMainBundle:Hotel" />
       <command text="s doctrine:generate:form TFMainBundle:Options" />
+      <command text="s doctrine:schema:update --force" />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
@@ -766,7 +766,7 @@
       <workItem from="1495095613204" duration="5443000" />
       <workItem from="1495102992249" duration="10773000" />
       <workItem from="1495182780313" duration="3135000" />
-      <workItem from="1495437512192" duration="12833000" />
+      <workItem from="1495437512192" duration="16836000" />
     </task>
     <task id="LOCAL-00001" summary="form html">
       <created>1495109695505</created>
@@ -845,11 +845,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495448548291</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Formulaire hotel image">
+      <created>1495457835511</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1495457835511</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63579000" />
+    <option name="totallyTimeSpent" value="67582000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1195,16 +1202,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TF/MainBundle/Form/HotelType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="38" column="14" lean-forward="false" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
-          <folding>
-            <element signature="e#38#87#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/TF/MainBundle/Resources/views/Hotel/add.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
@@ -1260,16 +1257,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/3a6d295b/b5dde03f-e553-49a8-9b85-dc624cb9439d/masuperdatabase.picture">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$PROJECT_DIR$/src/TF/MainBundle/Controller/HotelController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="14" lean-forward="false" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+          <folding>
+            <element signature="e#44#101#0#PHP" expanded="true" />
+            <element signature="e#894#928#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1286,22 +1281,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TF/MainBundle/Controller/HotelController.php">
+    <entry file="dbDummy://dbtable:/3a6d295b/b5dde03f-e553-49a8-9b85-dc624cb9439d/masuperdatabase.picture">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TF/MainBundle/Form/HotelType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="14" lean-forward="false" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+        <state relative-caret-position="595">
+          <caret line="38" column="14" lean-forward="false" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
           <folding>
-            <element signature="e#44#101#0#PHP" expanded="true" />
-            <element signature="e#894#928#0#PHP" expanded="true" />
+            <element signature="e#38#87#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TF/MainBundle/Entity/Hotel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="32" column="17" lean-forward="true" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="17">
+          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding>
+            <element signature="e#40#72#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
