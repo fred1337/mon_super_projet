@@ -12,3 +12,8 @@ main_default_register:
     path: /register
     defaults:
         _controller: TFMainBundle:User:Register
+
+main_hotel_add:
+    path: /hotel/add
+    defaults:
+        _controller: TFMainBundle:Hotel:add

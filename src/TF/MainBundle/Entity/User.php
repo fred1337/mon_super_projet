@@ -245,7 +245,7 @@ class User
     public function __construct()
     {
         $this->salt = uniqid();
-        $this->Roles = ["ROLE_USER"];
+        $this->roles = ["ROLE_USER"];
     }
 }
 
