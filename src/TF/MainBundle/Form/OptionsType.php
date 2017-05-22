@@ -15,9 +15,9 @@ class OptionsType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('pool', CheckboxType::class)
-            ->add('internet', CheckboxType::class)
-            ->add('breakfast', checkboxType::class
+            ->add('pool', CheckboxType::class, array('required' => false))
+            ->add('internet', CheckboxType::class, array('required' => false))
+            ->add('breakfast', checkboxType::class, array('required' => false)
             );
     }
     

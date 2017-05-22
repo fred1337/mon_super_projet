@@ -4,6 +4,7 @@ namespace TF\MainBundle\Form;
 
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\CollectionType;
 use Symfony\Component\Form\Extension\Core\Type\NumberType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
@@ -30,7 +31,11 @@ class HotelType extends AbstractType
                 'required' => false,
                 'attr' => array("class" => "maClasse")
             ))
-            //->add('MainPicture')
+            ->add('MainPicture', PictureType::class)
+            ->add('pictures', CollectionType::class, array(
+                'entry_type' => PictureType::class
+
+            ))
             ->add('submit', SubmitType::class);
         ;
     }

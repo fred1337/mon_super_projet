@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2bef723d-1eb3-4b75-9bc7-38bfd1dc0286" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TF/MainBundle/Controller/HotelController.php" afterPath="$PROJECT_DIR$/src/TF/MainBundle/Controller/HotelController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TF/MainBundle/Entity/Hotel.php" afterPath="$PROJECT_DIR$/src/TF/MainBundle/Entity/Hotel.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TF/MainBundle/Form/HotelType.php" afterPath="$PROJECT_DIR$/src/TF/MainBundle/Form/HotelType.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TF/MainBundle/Form/OptionsType.php" afterPath="$PROJECT_DIR$/src/TF/MainBundle/Form/OptionsType.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TF/MainBundle/Resources/views/Hotel/add.html.twig" afterPath="$PROJECT_DIR$/src/TF/MainBundle/Resources/views/Hotel/add.html.twig" />
@@ -88,8 +86,8 @@
       <file leaf-file-name="HotelType.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TF/MainBundle/Form/HotelType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="10" column="54" lean-forward="false" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+            <state relative-caret-position="391">
+              <caret line="35" column="50" lean-forward="false" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
               <folding>
                 <element signature="e#38#87#0#PHP" expanded="true" />
               </folding>
@@ -133,23 +131,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add.html.twig" pinned="false" current-in-tab="false">
+      <file leaf-file-name="add.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/TF/MainBundle/Resources/views/Hotel/add.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="28" lean-forward="false" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-              <folding>
-                <element signature="e#13#29#0#Twig" expanded="false" />
-              </folding>
+            <state relative-caret-position="85">
+              <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OptionsType.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="OptionsType.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TF/MainBundle/Form/OptionsType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+            <state relative-caret-position="357">
+              <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
               <folding>
                 <element signature="e#38#78#0#PHP" expanded="true" />
               </folding>
@@ -240,9 +236,9 @@
         <option value="$PROJECT_DIR$/src/TF/MainBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/TF/MainBundle/Controller/HotelController.php" />
         <option value="$PROJECT_DIR$/src/TF/MainBundle/Entity/Hotel.php" />
+        <option value="$PROJECT_DIR$/src/TF/MainBundle/Form/OptionsType.php" />
         <option value="$PROJECT_DIR$/src/TF/MainBundle/Resources/views/Hotel/add.html.twig" />
         <option value="$PROJECT_DIR$/src/TF/MainBundle/Form/HotelType.php" />
-        <option value="$PROJECT_DIR$/src/TF/MainBundle/Form/OptionsType.php" />
       </list>
     </option>
   </component>
@@ -748,7 +744,7 @@
       <workItem from="1495095613204" duration="5443000" />
       <workItem from="1495102992249" duration="10773000" />
       <workItem from="1495182780313" duration="3135000" />
-      <workItem from="1495437512192" duration="5712000" />
+      <workItem from="1495437512192" duration="7998000" />
     </task>
     <task id="LOCAL-00001" summary="form html">
       <created>1495109695505</created>
@@ -813,11 +809,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495439788638</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Formulaire hotel">
+      <created>1495445215547</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1495445215547</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56458000" />
+    <option name="totallyTimeSpent" value="58744000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -866,7 +869,8 @@
     <MESSAGE value="chargement image dans un dossier" />
     <MESSAGE value="formulaire hotel" />
     <MESSAGE value="Controler Hotel" />
-    <option name="LAST_COMMIT_MESSAGE" value="Controler Hotel" />
+    <MESSAGE value="Formulaire hotel" />
+    <option name="LAST_COMMIT_MESSAGE" value="Formulaire hotel" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1216,16 +1220,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TF/MainBundle/Resources/views/Hotel/add.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="28" lean-forward="false" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-          <folding>
-            <element signature="e#13#29#0#Twig" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/TF/MainBundle/Entity/Country.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
@@ -1242,23 +1236,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/TF/MainBundle/Form/OptionsType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+          <folding>
+            <element signature="e#38#78#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/TF/MainBundle/Form/HotelType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="54" lean-forward="false" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+        <state relative-caret-position="391">
+          <caret line="35" column="50" lean-forward="false" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
           <folding>
             <element signature="e#38#87#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TF/MainBundle/Form/OptionsType.php">
+    <entry file="file://$PROJECT_DIR$/src/TF/MainBundle/Resources/views/Hotel/add.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-          <folding>
-            <element signature="e#38#78#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="85">
+          <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
