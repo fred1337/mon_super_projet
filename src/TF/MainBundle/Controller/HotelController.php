@@ -8,10 +8,12 @@ use TF\MainBundle\Form\HotelType;
 
 class HotelController extends Controller
 {
-    public function addAction($name)
+    public function addAction()
     {
         $hotel = new Hotel();
-        $form = $this->createForm(HotelType::class);
-        return $this->render('TFMainBundle:Hotel:add.html.twig', array());
+        $form = $this->createForm(HotelType::class, $hotel);
+        return $this->render('TFMainBundle:Hotel:add.html.twig', array(
+            'form' => $form->createView()
+        ));
     }
 }

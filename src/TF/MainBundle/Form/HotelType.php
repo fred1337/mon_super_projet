@@ -5,10 +5,10 @@ namespace TF\MainBundle\Form;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\NumberType;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
-use TF\MainBundle\Entity\Options;
 
 class HotelType extends AbstractType
 {
@@ -20,15 +20,18 @@ class HotelType extends AbstractType
         $builder->add('name', TextType::Class)
             ->add('city', TextType::class)
             ->add('price', NumberType::class)
-            ->add('Options', Options::class)
+            ->add('Options', OptionsType::class)
             ->add('country', EntityType::class, array(
                 'choice_label' => 'name',
                 'class' => 'TF\MainBundle\Entity\Country',
                 'multiple' => false,
                 'expanded' => false,
+                'label' => 'Pays',
+                'required' => false,
+                'attr' => array("class" => "maClasse")
             ))
-            ->add('MainPicture')
-            ->add('submit')
+            //->add('MainPicture')
+            ->add('submit', SubmitType::class);
         ;
     }
     

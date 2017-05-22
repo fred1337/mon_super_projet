@@ -13,6 +13,11 @@ use Doctrine\ORM\Mapping as ORM;
 class Hotel
 {
     /**
+     * @var Country
+     * @ORM\ManyToOne(targetEntity="TF\MainBundle\Entity\Country", cascade={"persist"})
+     */
+    private $Country;
+    /**
      * @var Options
      * @ORM\OneToOne(targetEntity="TF\MainBundle\Entity\Options", cascade={"persist", "remove"})
      */
@@ -197,6 +202,22 @@ class Hotel
     public function setOptions($Options)
     {
         $this->Options = $Options;
+    }
+
+    /**
+     * @return Country
+     */
+    public function getCountry()
+    {
+        return $this->Country;
+    }
+
+    /**
+     * @param Country $Country
+     */
+    public function setCountry($Country)
+    {
+        $this->Country = $Country;
     }
 }
 
