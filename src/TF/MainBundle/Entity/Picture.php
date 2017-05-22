@@ -125,5 +125,21 @@ class Picture
         move_uploaded_file($this->file, __DIR__."/../../../../web/img/".$name);
         $this->url = "img/".$name;
     }
+
+    /**
+     * @return Hotel
+     */
+    public function getHotel()
+    {
+        return $this->hotel;
+    }
+
+    /**
+     * @param Hotel $hotel
+     */
+    public function setHotel($hotel)
+    {
+        $this->hotel = $hotel;
+    }
 }
 

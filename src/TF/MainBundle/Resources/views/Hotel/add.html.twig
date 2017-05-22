@@ -1,10 +1,37 @@
 {%  extends "::base.html.twig" %}
+
 {% block body %}
     <div class="container">
         <h1>Ajouter un Hotel</h1>
         <div class="col-md-8">
             {{ form_start(form) }}
+            {{ form_row(form.pictures) }}
+                <button id="add_picture">Ajouter une image</button>
             {{ form_end(form) }}
         </div>
     </div>
 {% endblock %}
+
+{% block javascripts %}
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+
+<script>
+    $(document).ready(function(){
+        var container = $("#tf_mainbundle_hotel_pictures");
+        var index = 1;
+        $("#add_picture").click(function(e) {
+            var protoChaine = container.attr("data-prototype");
+            var prototype = $(protoChaine
+                .replace("__name__label__", "Image n°" + index)
+                .replace(/__name__/g, index));
+            e.preventDefault();
+            container.append(prototype);
+            index++;
+        });
+    });
+</script>
+{% endblock %}
+

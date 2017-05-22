@@ -33,8 +33,9 @@ class HotelType extends AbstractType
             ))
             ->add('MainPicture', PictureType::class)
             ->add('pictures', CollectionType::class, array(
-                'entry_type' => PictureType::class
-
+                'entry_type' => PictureType::class,
+                'allow_add' => true,
+                'allow_delete' => true
             ))
             ->add('submit', SubmitType::class);
         ;

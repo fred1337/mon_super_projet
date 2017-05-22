@@ -31,7 +31,7 @@ class Hotel
 
     /**
      * @var array
-     * @ORM\OneToMany(targetEntity="TF\MainBundle\Entity\Picture", mappedBy="hotel")
+     * @ORM\OneToMany(targetEntity="TF\MainBundle\Entity\Picture", mappedBy="hotel", cascade={"persist"})
      */
     private $Pictures;
 
