@@ -1,7 +1,7 @@
 main_default_home:
     path: /home
     defaults:
-        _controller: TFMainBundle:Default:Home
+        _controller: TFMainBundle:Hotel:read
 
 main_default_contact:
     path: /contact

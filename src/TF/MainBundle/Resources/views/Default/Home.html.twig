@@ -4,7 +4,23 @@
 {% block stylesheets %}
 {% endblock %}
 {% block body %}
+    <div class="container">
     <h1>PAGE D'ACCUEIL</h1>
+        <div class="list-group">
+        {% for hotel in hotels %}
+            <button type="button" class="list-group-item">
+                <h2>{{  hotel.name }}</h2><h4>{{ hotel.city }} - {{ hotel.country.name }}</h4>
+                <img src="{{ asset(hotel.mainPicture.url) }}">
+                Prix :{{ hotel.price }}€
+
+                <div type="button" class="btn btn-primary">{% if hotel.options.pool == 1%}<img src="{{ asset('img/swimming-pool.png') }}">{% else %}Pas de Piscine{% endif %}</div>
+                <div type="button" class="btn btn-info">{% if hotel.options.breakfast == 1%}<img src="{{ asset('img/cereals.png') }}">{% else %}Pas de déjeuner{% endif %}</div>
+                <div type="button" class="btn btn-danger">{% if hotel.options.pool == 1%}<img src="{{ asset('img/wifi-signal.png') }}">{% else %}Pas de wifi{% endif %}</div>
+
+            </button>
+        {% endfor %}
+        </div>
+    </div>
 {% endblock %}
 {% block scripts %}
 {% endblock %}

@@ -1,0 +1,19 @@
+{% extends"::base.html.twig"%}
+{%block title%}
+{%endblock%}
+{%block stylesheets%}
+{%endblock%}
+{%block body%}
+    <div type="button" class="list-group-item">
+        <h2>{{  hotel.name }}</h2><h4>{{ hotel.city }} - {{ hotel.country.name }}</h4>
+        <img src="{{ asset(hotel.mainPicture.url) }}">
+        Prix :{{ hotel.price }}€
+
+        <div type="button" class="btn btn-primary">{% if hotel.options.pool == 1%}<img src="{{ asset('img/swimming-pool.png') }}">{% else %}Pas de Piscine{% endif %}</div>
+        <div type="button" class="btn btn-info">{% if hotel.options.breakfast == 1%}<img src="{{ asset('img/cereals.png') }}">{% else %}Pas de déjeuner{% endif %}</div>
+        <div type="button" class="btn btn-danger">{% if hotel.options.pool == 1%}<img src="{{ asset('img/wifi-signal.png') }}">{% else %}Pas de wifi{% endif %}</div>
+
+    </div>
+{%endblock%}
+{%block scripts%}
+{%endblock%}
