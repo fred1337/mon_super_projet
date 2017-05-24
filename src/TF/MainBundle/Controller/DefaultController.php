@@ -12,18 +12,18 @@ class DefaultController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
         $user = new User();
-        $user->setLastName("LY")
-            ->setFisrtName("Khun")
-            ->setRoles(["ROLE_USER"])
-            ->setPassword("")
-            ->setSalt("")
-            ->setEmail("");
-        $p = new Picture();
-        $p->setAlt("image khun")->setUrl("img.jpg");
-            $user->setAvatar($p);
-            $em->persist($user);
-            $em->persist($p);
-            $em->flush();
+//        $user->setLastName("LY")
+//            ->setFisrtName("Khun")
+//            ->setRoles(["ROLE_USER"])
+//            ->setPassword("")
+//            ->setSalt("")
+//            ->setEmail("");
+//        $p = new Picture();
+//        $p->setAlt("image khun")->setUrl("img.jpg");
+//            $user->setAvatar($p);
+//            $em->persist($user);
+//            $em->persist($p);
+//            $em->flush();
         return $this->render(
             "TFMainBundle:Default:Home.html.twig"
 

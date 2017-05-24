@@ -9,8 +9,8 @@
     </head>
     <body>
         {% include 'nav/nav.html.twig' %}
-        {% for successmessage in app.session.flashBag.get('success_messages') %}
-                {{ successMessage }}
+        {% for successMessage in app.session.flashBag.get('success_messages') %}
+            <div class="alert alert-success" role="alert">{{ successMessage }}</div>
         {% endfor %}
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
