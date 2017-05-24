@@ -36,7 +36,15 @@ class HotelController extends Controller
     }
 
     public function readAction() {
-        $hotels= $this->getDoctrine()->getManager()->getRepository('TFMainBundle:Hotel')->findAll();
+        $hotels= $this->getDoctrine()->getManager()->getRepository('TFMainBundle:Hotel')->findWidthLimit(8);
         return $this->render('TFMainBundle:Default:Home.html.twig', array('hotels' => $hotels));
+    }
+
+    public function detailAction($id) {
+        $hotel= $this->getDoctrine()
+            ->getManager()
+            ->getRepository('TFMainBundle:Hotel')
+            ->findOneHotelWithPictures($id);
+        return $this->render('TFMainBundle:Hotel:detail.html.twig', array('hotel' => $hotel));
     }
 }

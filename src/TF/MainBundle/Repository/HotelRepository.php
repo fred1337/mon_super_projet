@@ -10,4 +10,26 @@ namespace TF\MainBundle\Repository;
  */
 class HotelRepository extends \Doctrine\ORM\EntityRepository
 {
+    public function findWidthLimit($limit) {
+        return $this->createQueryBuilder('h')
+            ->select('h')
+            ->setMaxResults($limit)
+            ->orderBy('h.id','DESC')
+            ->getQuery()
+            ->getResult();
+    }
+
+    public function findOneHotelWithPictures($id) {
+        $array = $this->createQueryBuilder('h')
+            ->select('h')
+            ->leftJoin('h.Pictures', "p")
+            ->where('h.id = ?1')
+            ->setParameter(1, $id)
+            ->addSelect("p")
+            ->getQuery()->getResult();
+        if (count($array) > 0 ) {
+            return $array[0];
+        }
+
+    }
 }

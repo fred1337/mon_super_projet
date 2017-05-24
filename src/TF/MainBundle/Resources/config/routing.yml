@@ -17,3 +17,9 @@ main_hotel_add:
     path: /hotel/add
     defaults:
         _controller: TFMainBundle:Hotel:add
+
+main_hotel_detail:
+    path: /hotel/detail/{id}
+    defaults:
+        _controller: TFMainBundle:Hotel:detail
+
