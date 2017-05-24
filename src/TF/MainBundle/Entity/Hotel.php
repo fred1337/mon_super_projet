@@ -49,7 +49,6 @@ class Hotel
      * @var string
      *
      * @ORM\Column(name="Name", type="string", length=255)
-     * @Assert\NotBlank(Message="pas touche petit con")
      * @assert\Length(max="25",  maxMessage="Le champ doit être inf à 25", min=2)
      */
     private $name;

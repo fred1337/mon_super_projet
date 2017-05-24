@@ -4,6 +4,9 @@
     <div class="container">
         <h1>Ajouter un Hotel</h1>
         <div class="col-md-8">
+                {% if message is defined %}
+                    {{ message }}
+                {% endif %}
             {{ form_start(form) }}
             {{ form_row(form.pictures) }}
                 <button id="add_picture">Ajouter une image</button>

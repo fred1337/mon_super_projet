@@ -9,6 +9,9 @@
     </head>
     <body>
         {% include 'nav/nav.html.twig' %}
+        {% for successmessage in app.session.flashBag.get('success_messages') %}
+                {{ successMessage }}
+        {% endfor %}
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
     </body>
