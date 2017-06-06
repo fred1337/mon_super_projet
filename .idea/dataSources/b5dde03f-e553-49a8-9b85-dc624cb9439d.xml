@@ -25,21 +25,21 @@
       <SequenceIdentity>1</SequenceIdentity>
     </column>
     <column id="16" parent="9" name="StartDate">
-      <Position>2</Position>
+      <Position>4</Position>
       <DataType>datetime|0</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="17" parent="9" name="EndDate">
-      <Position>3</Position>
+      <Position>5</Position>
       <DataType>datetime|0</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="18" parent="9" name="user_id">
-      <Position>4</Position>
+      <Position>2</Position>
       <DataType>int(11)|0</DataType>
     </column>
     <column id="19" parent="9" name="hotel_id">
-      <Position>5</Position>
+      <Position>3</Position>
       <DataType>int(11)|0</DataType>
     </column>
     <index id="20" parent="9" name="UNIQ_E00CEDDE3243BB18">
@@ -111,30 +111,30 @@
       <SequenceIdentity>1</SequenceIdentity>
     </column>
     <column id="34" parent="11" name="main_picture_id">
-      <Position>2</Position>
+      <Position>4</Position>
       <DataType>int(11)|0</DataType>
     </column>
     <column id="35" parent="11" name="Name">
-      <Position>3</Position>
+      <Position>5</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="36" parent="11" name="City">
-      <Position>4</Position>
+      <Position>6</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="37" parent="11" name="Price">
-      <Position>5</Position>
+      <Position>7</Position>
       <DataType>double|0</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="38" parent="11" name="options_id">
-      <Position>6</Position>
+      <Position>3</Position>
       <DataType>int(11)|0</DataType>
     </column>
     <column id="39" parent="11" name="country_id">
-      <Position>7</Position>
+      <Position>2</Position>
       <DataType>int(11)|0</DataType>
     </column>
     <index id="40" parent="11" name="UNIQ_3535ED9D6BDC9DC">
@@ -153,18 +153,18 @@
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="44" parent="11" name="UNIQ_3535ED9D6BDC9DC">
-      <ColNames>main_picture_id</ColNames>
-      <UnderlyingIndexName>UNIQ_3535ED9D6BDC9DC</UnderlyingIndexName>
-    </key>
-    <key id="45" parent="11" name="UNIQ_3535ED93ADB05F1">
+    <key id="44" parent="11" name="UNIQ_3535ED93ADB05F1">
       <ColNames>options_id</ColNames>
       <UnderlyingIndexName>UNIQ_3535ED93ADB05F1</UnderlyingIndexName>
     </key>
-    <foreign-key id="46" parent="11" name="FK_3535ED9D6BDC9DC">
+    <key id="45" parent="11" name="UNIQ_3535ED9D6BDC9DC">
       <ColNames>main_picture_id</ColNames>
+      <UnderlyingIndexName>UNIQ_3535ED9D6BDC9DC</UnderlyingIndexName>
+    </key>
+    <foreign-key id="46" parent="11" name="FK_3535ED9F92F3E70">
+      <ColNames>country_id</ColNames>
       <RefSchemaName>masuperdatabase</RefSchemaName>
-      <RefTableName>picture</RefTableName>
+      <RefTableName>country</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
     <foreign-key id="47" parent="11" name="FK_3535ED93ADB05F1">
@@ -173,10 +173,10 @@
       <RefTableName>options</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="48" parent="11" name="FK_3535ED9F92F3E70">
-      <ColNames>country_id</ColNames>
+    <foreign-key id="48" parent="11" name="FK_3535ED9D6BDC9DC">
+      <ColNames>main_picture_id</ColNames>
       <RefSchemaName>masuperdatabase</RefSchemaName>
-      <RefTableName>country</RefTableName>
+      <RefTableName>picture</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
     <column id="49" parent="12" name="id">

@@ -8,7 +8,7 @@ use Doctrine\Common\Persistence\ObjectManager;
 use TF\MainBundle\Entity\Country;
 
 
-class LoadUserData implements FixtureInterface
+class LoadCountryData implements FixtureInterface
 {
     public function load(ObjectManager $manager)
     {

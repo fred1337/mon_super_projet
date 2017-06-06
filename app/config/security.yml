@@ -4,16 +4,21 @@ security:
 
     # http://symfony.com/doc/current/security.html#b-configuring-how-users-are-loaded
     providers:
-        in_memory:
-            memory:
-                users:
-                    user:
-                        password: userpass
-                        roles: [ROLE_USER]
-                    admin:
-                        password: admin
-                        roles: [ROLE_ADMIN]
-    provider: in_memory
+#        in_memory:
+#            memory:
+#                users:
+#                    user:
+#                        password: userpass
+#                        roles: [ROLE_USER]
+#                    admin:
+#                        password: admin
+#                        roles: [ROLE_ADMIN]
+        main:
+            entity:
+                class: TF\MainBundle\Entity\User
+                property: email
+
+    provider: main
 
     role_hierarchy :
         ROLE_ADMIN: ROLE_USER
@@ -39,6 +44,9 @@ security:
                 target: login
     encoders:
         Symfony\Component\Security\Core\User\User: plaintext
+        TF\MainBundle\Entity\User:
+            algorithm: sha512
+            iterations: 4756
 
 #    access_control:
 #        - { path: ^/main/admin, roles: ROLE_ADMIN }
