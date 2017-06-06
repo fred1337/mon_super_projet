@@ -8,7 +8,13 @@
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
-        {% include 'nav/nav.html.twig' %}
+    {% if not(is_granted('ROLE_USER')) %}
+        {% include 'nav/nav_anonym.html.twig' %}
+    {% elseif not(is_granted('ROLE_ADMIN')) %}
+        {% include 'nav/nav_user.html.twig' %}
+    {% else %}
+        {%  include 'nav/nav_admin.html.twig' %}
+    {% endif %}
         {% for successMessage in app.session.flashBag.get('success_messages') %}
             <div class="alert alert-success" role="alert">{{ successMessage }}</div>
         {% endfor %}
