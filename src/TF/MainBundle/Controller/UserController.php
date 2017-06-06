@@ -29,4 +29,9 @@ class UserController extends Controller
             )
         );
     }
+
+    public function loginAction()
+    {
+        return $this->render("TFMainBundle:User:login.html.twig");
+    }
 }
