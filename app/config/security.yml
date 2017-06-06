@@ -47,6 +47,7 @@ security:
         TF\MainBundle\Entity\User:
             algorithm: sha512
             iterations: 4756
+            encode_as_base64: true
 
 #    access_control:
 #        - { path: ^/main/admin, roles: ROLE_ADMIN }

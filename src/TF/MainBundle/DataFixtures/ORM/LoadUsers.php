@@ -20,7 +20,7 @@ class LoadUserData implements FixtureInterface
        $avatar->setAlt("profil")->setUrl("img/591dafbda2a4e.jpg");
        $avatar2 = new Picture();
        $avatar2->setAlt("profil")->setUrl("img/591dafbda2a4e.jpg");
-       $encoder = new messageDigestPasswordEncoder();
+       $encoder = new messageDigestPasswordEncoder('sha512',true, 4756);
        $password = $encoder->encodePassword("test",$user->getSalt());
        $admin = new User();
        $password2 = $encoder->encodePassword("admin",$admin->getSalt());
