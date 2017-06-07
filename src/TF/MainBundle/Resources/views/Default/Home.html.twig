@@ -12,7 +12,7 @@
             <button type="button" class="list-group-item">
                 <h2>{{ hotel.name }}</h2><h4>{{ hotel.city }} - {{ hotel.country.name }}</h4>
                 <img src="{{ asset(hotel.mainPicture.url) }}">
-                <h3>Prix :{{ hotel.price }}€</h3>
+                <h3>Prix :{{ hotel.price }}€/nuit</h3>
 
                 <div type="button" class="btn btn-primary">{% if hotel.options.Pool == 1%}<img src="{{ asset('img/swimming-pool.png') }}">{% else %}Pas de Piscine{% endif %}</div>
                 <div type="button" class="btn btn-info">{% if hotel.options.Breakfast == 1%}<img src="{{ asset('img/cereals.png') }}">{% else %}Pas de déjeuner{% endif %}</div>

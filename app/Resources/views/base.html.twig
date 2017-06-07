@@ -8,6 +8,9 @@
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
+    {% if not app.user == null %}
+        Vous êtes connecté en tant que {{ app.user.lastname }}
+    {% endif %}
     {% if not(is_granted('ROLE_USER')) %}
         {% include 'nav/nav_anonym.html.twig' %}
     {% elseif not(is_granted('ROLE_ADMIN')) %}
